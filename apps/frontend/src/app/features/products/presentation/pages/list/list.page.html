@@ -1,0 +1,19 @@
+<div class="container">
+  <full-moon-products-item
+    *ngFor="let product of viewModel.products"
+    class="product-item"
+    priceAmount="{{ product.price.amount | currency }}"
+    [shippingIcon]="config.shippingIcon"
+    [title]="product.title"
+    [image]="product.thumbnail"
+    [isFreeShipping]="product.isFreeShipping"
+    (selected)="goToDetails(product.id)"
+  ></full-moon-products-item>
+
+  <full-moon-state-indicator
+    [showEmptyCase]="viewModel.products.length <= 0"
+    [showLoading]="viewModel.isLoading"
+  >
+    No se encontraron resultados
+  </full-moon-state-indicator>
+</div>

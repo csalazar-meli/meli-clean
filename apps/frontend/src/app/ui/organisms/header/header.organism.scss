@@ -1,0 +1,21 @@
+.header {
+  background-color: var(--color-primary);
+  height: 48px;
+  padding: 5px;
+}
+
+.toolbar {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+
+  &__logo {
+    height: 40px;
+    margin-right: 25px;
+    cursor: pointer;
+  }
+
+  &__searcher {
+    flex-grow: 1;
+  }
+}

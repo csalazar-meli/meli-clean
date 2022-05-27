@@ -1,0 +1,30 @@
+:root {
+  --color-primary: #ffe600;
+  --color-secondary: #333333;
+  --color-tertiary: #eeeeee;
+  --color-placeholder: #999999;
+
+  --button-primary: #3483fa;
+  --button-primary-active: #2e7de0;
+  --button-secondary: #333333;
+  --button-secondary-active: #333333;
+}
+
+html,
+body {
+  color: var(--color-secondary);
+  background-color: var(--color-tertiary);
+
+  font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  border-radius: 4px;
+}
+
+@import './theme/utils';

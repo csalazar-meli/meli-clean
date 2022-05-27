@@ -1,0 +1,14 @@
+<full-moon-header
+  (logoPressed)="goToHome()"
+  (searchPressed)="onSearch($event)"
+></full-moon-header>
+
+<main class="content">
+  <full-moon-breadcrumb
+    class="margin-vertical"
+    [breads]="breadcrumbs"
+    (breadPressed)="onSearch($event)"
+  ></full-moon-breadcrumb>
+
+  <router-outlet></router-outlet>
+</main>

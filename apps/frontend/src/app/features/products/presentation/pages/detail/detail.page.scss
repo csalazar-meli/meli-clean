@@ -1,0 +1,29 @@
+.detail {
+  display: flex;
+  justify-content: space-between;
+
+  &__image {
+    width: 680px;
+    margin: 2rem;
+    border-radius: 3px;
+  }
+
+  &__summary {
+    max-width: 230px;
+    margin: 2rem;
+  }
+
+  &__description {
+    max-width: 70%;
+    padding-bottom: 2rem;
+  }
+
+  &__description-title {
+    font-size: 1.75rem;
+  }
+
+  &__description-text {
+    font-size: 1rem;
+    color: var(--color-placeholder);
+  }
+}

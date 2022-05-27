@@ -1,0 +1,19 @@
+.loading {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: var(--color-primary) var(--color-tertiary) var(--color-tertiary);
+  animation: spin 1.5s ease-in-out infinite;
+  box-shadow: 0 0 4px -1px black inset, 0 0 4px -1px black;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}

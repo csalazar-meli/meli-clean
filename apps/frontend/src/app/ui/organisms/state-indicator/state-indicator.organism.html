@@ -1,0 +1,7 @@
+<div *ngIf="showEmptyCase || showLoading" class="empty-case flex">
+  <span *ngIf="showEmptyCase && !showLoading">
+    <ng-content></ng-content>
+  </span>
+
+  <full-moon-loading *ngIf="showLoading"></full-moon-loading>
+</div>

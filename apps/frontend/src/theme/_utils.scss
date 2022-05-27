@@ -1,0 +1,43 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin {
+  margin: 1rem;
+
+  &-2x {
+    margin: 2rem;
+  }
+}
+
+.margin-left {
+  margin-left: 1rem;
+
+  &-2x {
+    margin-left: 2rem;
+  }
+}
+
+.margin-top-2x {
+  margin-top: 2rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+
+  &-2x {
+    margin-bottom: 2rem;
+  }
+}
+
+.margin-vertical {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &-2x {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

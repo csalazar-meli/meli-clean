@@ -1,0 +1,9 @@
+<ul class="breadcrumb">
+  <li
+    *ngFor="let bread of breads"
+    class="breadcrumb__item"
+    (click)="breadPressed.emit(bread)"
+  >
+    {{ bread }}
+  </li>
+</ul>

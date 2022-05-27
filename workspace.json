@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "clean-express": "apps/clean-express"
+    "backend": "apps/backend",
+    "frontend": "apps/frontend"
   }
 }

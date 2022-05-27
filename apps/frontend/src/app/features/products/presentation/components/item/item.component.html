@@ -1,0 +1,18 @@
+<div class="item" (click)="selected.emit()">
+  <img class="item__image" [src]="image" alt="{{ title }}" />
+
+  <div>
+    <div class="item__price margin-vertical-2x">
+      {{ priceAmount }}
+
+      <img
+        *ngIf="isFreeShipping"
+        class="item__shipping-icon"
+        [src]="shippingIcon"
+        alt="Envio gratis"
+      />
+    </div>
+
+    <span class="item__title">{{ title }}</span>
+  </div>
+</div>

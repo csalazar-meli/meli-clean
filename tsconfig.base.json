@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@meli-clean/backend/core": ["apps/backend/src/core/index.ts"],
+      "@meli-clean/backend/data": ["apps/backend/src/data/index.ts"],
+      "@meli-clean/backend/presentation": [
+        "apps/backend/src/presentation/index.ts"
+      ],
+      "@meli-clean/frontend/features/products/*": [
+        "apps/frontend/src/app/features/products/*/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

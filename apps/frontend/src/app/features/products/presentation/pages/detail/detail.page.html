@@ -1,0 +1,38 @@
+<div class="container">
+  <div *ngIf="viewModel.product">
+    <div class="detail">
+      <img
+        class="detail__image"
+        [src]="viewModel.product.image"
+        alt="Imagen del producto"
+      />
+
+      <div class="detail__summary">
+        <full-moon-products-summary
+          status="{{ viewModel.product.condition }} - {{ viewModel.product.soldQuantity | number: '1.0-0' }} vendidos"
+          [title]="viewModel.product.title"
+          [priceAmount]="viewModel.product.price.amount | currency"
+        ></full-moon-products-summary>
+
+        <full-moon-button>Comprar</full-moon-button>
+      </div>
+    </div>
+
+    <div class="detail__description margin-2x">
+      <h2 class="detail__description-title margin-bottom-2x">
+        Descripción del producto
+      </h2>
+
+      <p class="detail__description-text">
+        {{ viewModel.product.description }}
+      </p>
+    </div>
+  </div>
+
+  <full-moon-state-indicator
+    [showEmptyCase]="!viewModel.product"
+    [showLoading]="viewModel.isLoading"
+  >
+    No se encontraron resultados
+  </full-moon-state-indicator>
+</div>

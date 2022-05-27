@@ -1,0 +1,17 @@
+<input
+  #searchBox
+  type="text"
+  class="searcher__box"
+  autoCorrect="off"
+  autoComplete="off"
+  [attr.aria-label]="placeholder"
+  [placeholder]="placeholder"
+  (keydown.enter)="searchBox.value && searchPressed.emit(searchBox.value)"
+/>
+
+<button
+  type="button"
+  class="searcher__button"
+  [attr.aria-label]="buttonAriaLabel"
+  (click)="searchBox.value && searchPressed.emit(searchBox.value)"
+></button>

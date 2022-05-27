@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+.item {
+  display: flex;
+
+  &__image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #e6e6e6;
+    margin-right: 16px;
+  }
+
+  &__price {
+    font-size: 1.4rem;
+  }
+
+  &__shipping-icon {
+    margin-left: 4px;
+    width: 18px;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+  }
+}
